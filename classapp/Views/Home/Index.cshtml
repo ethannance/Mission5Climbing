@@ -1,0 +1,121 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewBag.Title = "My Page";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rock Climbing Adventures</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #e0eafc, #cfdef3);
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(to bottom, #006d77 0%, #023047 100%);
+            color: #ffffff;
+            padding: 40px 20px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        section {
+            padding: 20px 40px;
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .image:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        p {
+            text-align: justify;
+        }
+
+        footer {
+            background: #023047;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+            footer p {
+                margin: 10px;
+                font-size: 0.9rem;
+            }
+
+        <style >
+        /* Other styles remain unchanged */
+        .image-container {
+            display: flex;
+            justify-content: center; /* This centers the items (images) horizontally in the container */
+            flex-wrap: nowrap; /* Prevents wrapping to ensure images stay side by side */
+            gap: 20px; /* Adds space between images */
+        }
+
+        .image {
+            margin: 10px; /* Adjusted for spacing around images */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            width: calc(50% - 40px); /* Adjusts the width to fit two images side by side, accounting for margin */
+            max-width: 400px; /* Optional: Adjust this to control the maximum size of images */
+            height: auto; /* Maintain aspect ratio */
+        }
+
+        /* Other styles remain unchanged */
+    </style>
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Rock Climbing World</h1>
+    </header>
+
+    <section>
+        <div class="image-container">
+            <img src="~/img/meclimb1.jpg" class="image" alt="Rock Climbing Image Description">
+            <img src="~/img/meclimb2.jpg" class="image" alt="Rock Climbing Image Description">
+        </div>
+
+        <p>
+            Rock climbing has been my passion for years. It's not just a sport to me; it's a way to challenge myself, connect with nature, and escape the hustle and bustle of daily life. From bouldering to sport climbing, each discipline offers its own unique set of challenges and rewards.
+        </p>
+        <p>
+            My journey began with indoor climbing, which provided a solid foundation in technique and safety. However, it was the transition to outdoor climbing that truly ignited my passion. There's something indescribably thrilling about scaling a natural rock face, relying on your skills, strength, and mental fortitude. Each new wall is like a puzzle to me that needs solving.
+        </p>
+        <p>
+            Through this website, I hope to share the joys of climbing with fellow enthusiasts and newcomers alike. Whether you're here to learn, find inspiration, or just enjoy the views, welcome to my climbing adventure.
+        </p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 by Ethan Nance. All rights reserved.</p>
+        <p>Website built with love and passion for rock climbing.</p>
+    </footer>
+</body>
+</html>

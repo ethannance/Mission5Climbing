@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link rel="icon" type="img/png" href="~/img/climb.jpeg" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #e0eafc, #cfdef3);
+            color: #333;
+            line-height: 1.6;
+        }
+
+        nav {
+            background: linear-gradient(to bottom, #023047 0%, #023047 100%);
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        .nav-item {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: inline-block; /* Adjusted for inline display */
+        }
+
+        .nav-link {
+            color: #ffffff;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+            .nav-link:hover {
+                background-color: #004c4c;
+            }
+    </style>
+</head>
+<body>
+    <nav>
+        <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Go to Main Page</a>
+        <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Calculator">Hire me!</a>
+    </nav>
+    <div>
+        @RenderBody()
+    </div>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+ 
+</body>
+</html>
+
