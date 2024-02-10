@@ -5,26 +5,33 @@
     <meta name="viewport" content="width=device-width" />
     <title>@ViewBag.Title</title>
     <style>
+        nav {
+            background: linear-gradient(to bottom, #023047 0%, #023047 100%);
+            padding: 10px 20px;
+            text-align: center;
+            position: fixed; /* Keeps the navbar fixed at the top */
+            top: 0; /* Aligns navbar to the top of the viewport */
+            left: 0; /* Aligns navbar to the left edge of the viewport */
+            width: 100%; /* Ensures navbar spans the entire width */
+            z-index: 1000; /* Ensures navbar stays on top of other content */
+        }
+
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
-            padding: 0;
+            padding-top: 60px; /* Adds padding to the top to prevent content from being hidden under the navbar */
             background: linear-gradient(to right, #e0eafc, #cfdef3);
             color: #333;
             line-height: 1.6;
         }
 
-        nav {
-            background: linear-gradient(to bottom, #023047 0%, #023047 100%);
-            padding: 10px 20px;
-            text-align: center;
-        }
 
         .nav-item {
             margin: 0;
             padding: 0;
             list-style: none;
             display: inline-block; /* Adjusted for inline display */
+
         }
 
         .nav-link {
@@ -38,6 +45,25 @@
             .nav-link:hover {
                 background-color: #004c4c;
             }
+
+        footer {
+            background: #023047;
+            color: #ffffff;
+            text-align: center;
+            padding: 1px;
+            position: fixed; /* Changed from relative to fixed */
+            bottom: 0; /* Ensures footer sticks to the bottom */
+            left: 0; /* Aligns footer to the left edge of the viewport */
+            width: 100%;
+            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+
+            footer p {
+                margin: 10px;
+                font-size: 0.9rem;
+                text-align: center;
+            }
     </style>
 </head>
 <body>
@@ -49,7 +75,10 @@
         @RenderBody()
     </div>
     <script src="~/js/site.js" asp-append-version="true"></script>
- 
+
+    <footer>
+        <p>&copy; 2024 by Ethan Nance. All rights reserved.</p>
+    </footer>
 </body>
 </html>
 
